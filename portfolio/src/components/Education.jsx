@@ -13,7 +13,6 @@ const journey = [
     subtitle: "Galgotias University",
     description: "Started my programming and AI learning journey.",
   },
-
   {
     year: "2024",
     icon: <FaCode />,
@@ -21,7 +20,6 @@ const journey = [
     subtitle: "HTML • CSS • JavaScript",
     description: "Learned core frontend technologies and built UI projects.",
   },
-
   {
     year: "2025",
     icon: <FaReact />,
@@ -29,7 +27,6 @@ const journey = [
     subtitle: "React • Node • Express • MongoDB",
     description: "Building full-stack applications using modern technologies.",
   },
-
   {
     year: "2026",
     icon: <FaRocket />,
@@ -41,64 +38,59 @@ const journey = [
 
 export default function Education() {
   return (
-    <section
-      id="education"
-      className="min-h-screen bg-[#161329] text-white py-10 px-6 flex items-center"
-    >
-      <div className="max-w-6xl mx-auto w-full">
+    <section id="education" className="bg-[#161329] text-white py-12 px-6">
+      <div className="max-w-4xl mx-auto">
 
-        <div className="text-center mb-8">
+        {/* Heading */}
 
-          <p className="uppercase tracking-[4px] text-pink-500 text-sm font-semibold">
+        <div className="text-center mb-6">
+
+          <p className="uppercase tracking-[3px] text-pink-500 text-xs font-semibold">
             MY JOURNEY
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold mt-2">
-            Education &
+          <h2 className="text-3xl md:text-4xl font-bold mt-2">
+            Education
             <span className="text-pink-500">
-              {" "}Learning Journey
+              {" "}& Learning Journey
             </span>
           </h2>
 
-          <p className="text-gray-400 text-sm mt-3 max-w-xl mx-auto">
+          <p className="text-gray-400 text-sm mt-2 max-w-lg mx-auto">
             My learning path from university to becoming a Full Stack Developer.
           </p>
 
         </div>
-                {/* Timeline */}
+
+        {/* Timeline */}
 
         <div className="relative">
 
-          {/* Vertical Line */}
+          <div className="absolute left-4 top-0 h-full w-[2px] bg-pink-500/30"></div>
 
-          <div className="absolute left-5 top-0 h-full w-[2px] bg-pink-500/30"></div>
-
-          <div className="space-y-5">
+          <div className="space-y-4">
 
             {journey.map((item, index) => (
 
-              <div
-                key={index}
-                className="flex items-start gap-5"
-              >
+              <div key={index} className="flex gap-4">
 
-                {/* Timeline Icon */}
+                {/* Icon */}
 
-                <div className="relative z-10 flex flex-col items-center">
+                <div className="relative z-10">
 
                   <div
                     className="
-                    w-10
-                    h-10
+                    w-9
+                    h-9
                     rounded-full
                     bg-[#231D3D]
-                    border-2
+                    border
                     border-pink-500
                     flex
                     items-center
                     justify-center
                     text-pink-500
-                    shadow-[0_0_15px_rgba(236,72,153,.5)]"
+                    text-sm"
                   >
                     {item.icon}
                   </div>
@@ -113,31 +105,30 @@ export default function Education() {
                   bg-[#1E1835]
                   border
                   border-pink-500/20
-                  rounded-2xl
-                  p-4
+                  rounded-xl
+                  px-4
+                  py-3
                   hover:border-pink-500
-                  hover:shadow-[0_0_25px_rgba(236,72,153,.25)]
-                  transition-all
-                  duration-300"
+                  transition"
                 >
 
-                  <div className="flex justify-between items-center mb-2">
+                  <div className="flex justify-between items-center">
 
-                    <h3 className="text-lg font-semibold text-white">
+                    <h3 className="text-base font-semibold">
                       {item.title}
                     </h3>
 
-                    <span className="text-pink-400 font-semibold text-sm">
+                    <span className="text-pink-400 text-xs font-semibold">
                       {item.year}
                     </span>
 
                   </div>
 
-                  <p className="text-pink-400 text-sm">
+                  <p className="text-pink-400 text-xs mt-1">
                     {item.subtitle}
                   </p>
 
-                  <p className="text-gray-400 text-sm mt-2 leading-6">
+                  <p className="text-gray-400 text-sm mt-2 leading-5">
                     {item.description}
                   </p>
 
@@ -151,7 +142,7 @@ export default function Education() {
 
         </div>
 
-              </div>
+      </div>
     </section>
   );
 }

@@ -2,7 +2,7 @@ import profileImg from "../assets/vijay.png";
 
 const Hero = () => {
   return (
-    <section className="bg-[#1b1b2f] min-h-[90vh] flex items-center">
+    <section id="home" className="bg-[#1b1b2f] min-h-[90vh] flex items-center">
       <div className="max-w-7xl mx-auto px-8 w-full grid lg:grid-cols-2 gap-16 items-center">
 
         {/* Left Content */}
