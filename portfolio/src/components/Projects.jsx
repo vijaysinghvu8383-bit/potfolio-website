@@ -103,13 +103,15 @@ export default function Projects() {
                   Live Demo
                 </a>
 
-                <a
-                  href="#"
-                  className="flex-1 flex justify-center items-center gap-2 py-3 rounded-xl border border-pink-500 text-pink-400 hover:bg-pink-500 hover:text-white duration-300"
-                >
-                  <FaGithub />
-                  GitHub
-                </a>
+              <a
+  href="https://github.com/vijaysinghvu8383-bit"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex-1 flex justify-center items-center gap-2 py-3 rounded-xl border border-pink-500 text-pink-400 hover:bg-pink-500 hover:text-white duration-300"
+>
+  <FaGithub />
+  GitHub
+</a>
 
               </div>
 
